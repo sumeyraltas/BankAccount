@@ -1,4 +1,3 @@
-
 public class BankAccount {
 
 	public Bank bank;
@@ -74,6 +73,4 @@ public class BankAccount {
 	public void setAccountNumber(int accountNumber) {
 		this.accountNumber = accountNumber;
 	}
-	
-	
 }
