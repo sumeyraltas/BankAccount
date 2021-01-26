@@ -1,25 +1,19 @@
 import java.util.*;
-
-
 public class MainProgram {
 
 	public static void main(String[] args) {
 		
+		ArrayList<Person> personArrL = new ArrayList<Person>();
+	    	ArrayList<Bank> bankArrL = new ArrayList<Bank>();
+	    	ArrayList<BankAccount>  bankAccountArrL = new ArrayList<BankAccount>();
 
-		 ArrayList<Person> personArrL = new ArrayList<Person>();
-	     ArrayList<Bank> bankArrL = new ArrayList<Bank>();
-	     ArrayList<BankAccount>  bankAccountArrL = new ArrayList<BankAccount>();
-		
-		
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("Enter a command: ");
 		String command = scan.next();
-
+		
 		while (!command.equals("Q")) {
-			
 			switch (command) {
-			
 			case "createPerson":
 			
 				String firstName = scan.next();
@@ -61,10 +55,7 @@ public class MainProgram {
 				break;
 				
 			case "createBankAccount":
-				
-				
-				//personIndex
-				//bankIndex
+
 				int personIndex = scan.nextInt();
 				int bankIndex = scan.nextInt();
 				double balance = scan.nextDouble();
@@ -97,9 +88,6 @@ public class MainProgram {
 	                    }
 
 	                }
-			
-				
-				
 				break;
 				
 			case "deposit":
@@ -117,18 +105,12 @@ public class MainProgram {
                     }
 
                 }
-			
-				
 				break;
 				
-
 			case "changeAccountNum":
-				
 				
 				int accountNumIndex = scan.nextInt();
 				int newaccountNumIndex = scan.nextInt();
-				
-				
 					
 					for(int i = 0 ; i < bankAccountArrL.size() ; i++) { 
 					 	
@@ -150,12 +132,10 @@ public class MainProgram {
 				break;
 				
 			}
-
 			
 			System.out.println("Enter a command: ");
 			command = scan.next();
-			
-			
+				
 		}
 	}
 }
