@@ -1,6 +1,5 @@
-
 public class Bank {
-
+	
 	public String bankName;
 	public Address bankAddress;
 	
@@ -10,13 +9,10 @@ public class Bank {
 		this.bankAddress = bankAddress;
 	}
 
-	
 
 	public String toString() {
 		return "Bank [Bank Name= " + bankName + ", Bank Address= " + bankAddress + "]";
 	}
-
-
 
 	public String getBankName() {
 		return bankName;
@@ -32,9 +28,5 @@ public class Bank {
 
 	public void setBankAddress(Address bankAddress) {
 		this.bankAddress = bankAddress;
-	}
-	
-	
-	
-	
+	}	
 }
